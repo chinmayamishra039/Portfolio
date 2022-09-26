@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ************************************Nav Bar******************************* */
+:root{
+  --text-primary: white;
+    --text-orange: orange;
+    --bg-color: #020312;
+	--text-color: #fff;
+	--main-color: #eb4a4a;
+	--second-color: gray;
+	--other-color: #12141c;
+	--h1-font: 5.2rem;
+	--h2-font: 3.5rem;
+	--p-font: 1.1rem;
+}
+/* nav-link */
+a.nav-link{
+  font-weight:400;
+  letter-spacing: 0.04rem;
+  cursor:pointer;
+  text-transform:uppercase
+}
+ul>li>a.nav-link{
+  margin-right: 0.75rem;
+  margin-left:0.75rem;
+  margin-bottom: 0.75rem;
+  margin-top: auto;
+  color:var(--text-primary)!important;
+  border-top:0.1875rem  black;
+}
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0!important;
+  height: 5rem!important;
+}
+.navbar-nav > .nav-item > .nav-link:active,.navbar-nav > .nav-item > .nav-link:focus{
+  border:0.1875rem solid var(--text-orange);
+  background-color: gray;
+}
+.navbar-nav > .nav-item > a:hover{
+  border-top:0.1875rem solid var(--text-orange)
+}
+.faBarsStaggered{
+  background-color: gray;
+  color: var(--text-primary);
+}
+
+/*--------------Header  ----------------------------------------*/
+.header-wrapper{
+  background-image: url(../public/dhf.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 90vh;
+  opacity: 0.8;
+}
+.main-info{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-info h1{
+  color: var(--text-orange);
+  text-transform: uppercase;
+}
+/* ---------------typed-text ---------------*/
+.typed-text{
+  color:var(--text-primary);
+  font-size: 2rem;
+
+
+}
